@@ -1,7 +1,7 @@
 <?php
-require_once('nimbl.php');
-
-$nimbl = new Nimbl;
+  require_once('nimbl.php');
+  
+  $nimbl = new Nimbl;
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,6 @@ $nimbl = new Nimbl;
 				</div>
 				<div class="row">
 					<div id="file-tree" class="span3">
-						<?php $path = dirname(dirname(__FILE__)); ?>
 						<div class="well"><?php $nimbl->output_directory('..'); ?></div>
 					</div>
 					<div class="span9">
@@ -47,7 +46,7 @@ $nimbl = new Nimbl;
 				<footer>
 				</footer>
 			</div>
-		</form>
+
 		<script src="../js/jquery.js"></script>
 		<script src="../js/codemirror.min.js"></script>
 		<script src="../js/bootstrap.js"></script>

@@ -1,6 +1,11 @@
 <?php
 
 class Nimbl {
+  	/**
+	* A recurive function used to traverse a directory and output the files and folders within
+	*
+	* @param $dir String containing directory to traverse
+	*/
 	public function output_directory($dir) {
 		if ($handle = opendir($dir)) {
 			echo '<ul class="nav nav-list">';
